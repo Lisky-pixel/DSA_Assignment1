@@ -1,4 +1,5 @@
-#This is a 
+# This function  reads a file, processes each line as an integer, and returns a sorted list of unique integers.
+ 
 def read_and_process_file(input_file_path):
     """ Read integers from file and return a sorted list of unique integers. """
     sorted_unique_integers = []
@@ -10,6 +11,7 @@ def read_and_process_file(input_file_path):
             except ValueError:
                 continue  # Skip non-integer lines
     return sorted_unique_integers
+#The  function inserts a value into a sorted list sorted_data while maintaining the sorted order. 
 
 def custom_insert(sorted_data, value):
     """ Insert value into sorted_data maintaining sorted order. """
@@ -21,6 +23,7 @@ def custom_insert(sorted_data, value):
             return sorted_data
     sorted_data.append(value)
     return sorted_data
+
 
 def write_output_file(output_file_path, integers):
     """ Write each integer from the list to the file, one per line. """
@@ -34,6 +37,6 @@ def process_file(input_file_path, output_file_path):
     write_output_file(output_file_path, sorted_unique_integers)
 
 # Example usage
-input_file_path = 'sample_input1.txt'
-output_file_path = 'sample_output1.txt'
+input_file_path = 'small_sample_input_01.txt'
+output_file_path = 'small_sample_output_01.txt'
 process_file(input_file_path, output_file_path)
