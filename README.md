@@ -1,1 +1,1 @@
-In the code all you need to do is just change the input and output file according to all you saved it in order to get your the right result for each file.
+All you need to do in the code is change the input and output file paths according to how you saved it to get the correct result for each file.
